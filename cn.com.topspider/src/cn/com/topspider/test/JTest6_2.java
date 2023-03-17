@@ -20,7 +20,7 @@ public class JTest6_2 {
 		//https://tieba.baidu.com/p/8018300231 https://tieba.baidu.com/p/8029003346
 		//https://tieba.baidu.com/p/8286344424 https://tieba.baidu.com/p/8286380636
 		//https://tieba.baidu.com/p/6289730011 https://tieba.baidu.com/p/8311540849
-		String tieziUrl = "https://tieba.baidu.com/p/7909416011"; //帖子url
+		String tieziUrl = "https://tieba.baidu.com/p/8303524352"; //帖子url
 		String[] urlAry = tieziUrl.split("/");
 		String tid = urlAry[urlAry.length-1];
 		String pn = "1"; //页码
