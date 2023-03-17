@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Topspider
+Bundle-SymbolicName: cn.com.topspider;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Polabear-AutoStart: true
+Polabear-Mapper: MAPPER-INF/*.xml
+Polabear-Database: DB-INF/*.xml
+Service-Component: OSGI-INF/*.xml
+Bundle-ActivationPolicy: lazy
+Require-Bundle: cn.com.jzxl.polabear.framework;bundle-version="5.0.0",
+ cn.com.jzxl.polabear.generic;bundle-version="1.0.0",
+ cn.com.jzxl.polabear.web.webservice6;bundle-version="1.6.0"
+Bundle-ClassPath: lib/jsoup-1.12.1.jar,
+ lib/fastjson-1.2.49.jar
