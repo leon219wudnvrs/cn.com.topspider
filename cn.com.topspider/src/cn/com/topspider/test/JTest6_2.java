@@ -20,7 +20,7 @@ public class JTest6_2 {
 		//https://tieba.baidu.com/p/8018300231 https://tieba.baidu.com/p/8029003346
 		//https://tieba.baidu.com/p/8286344424 https://tieba.baidu.com/p/8286380636
 		//https://tieba.baidu.com/p/6289730011 https://tieba.baidu.com/p/8311540849
-		String tieziUrl = "https://tieba.baidu.com/p/8303524352"; //帖子url
+		String tieziUrl = "https://tieba.baidu.com/p/8314016158"; //帖子url
 		String[] urlAry = tieziUrl.split("/");
 		String tid = urlAry[urlAry.length-1];
 		String pn = "1"; //页码
@@ -138,7 +138,9 @@ public class JTest6_2 {
 				String date = content.getString("date"); //日期
 				pid = post_id;
 				total_num = comment_num;
-				System.out.println("IP属地:" + ip_address +"," + post_no + "楼" + date +",回复数:" + comment_num);
+				if(StringUtils.isBlank(tailSelect.text())){
+					System.out.println("IP属地:" + ip_address +"," + post_no + "楼" + date +",回复数:" + comment_num);
+				}
 			}else{
 				pid = JSONObject.parseObject(data_field).getLong("pid");
 				total_num = JSONObject.parseObject(data_field).getInteger("total_num");

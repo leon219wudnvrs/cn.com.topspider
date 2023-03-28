@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="chatgpt-java-1.0.7">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/chatgpt-java-1.0.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
